@@ -1,0 +1,17 @@
+---
+    - name: Install Django
+      gather_facts: false
+      hosts: localhost
+      vars:
+        django_version: 3.0.4
+      tasks:
+        - pip:
+            name: django
+            version: "{{ django_version }}"
+
+        - name: Wait for 5 sec
+          pause:
+            seconds: 5
+            
+    
+  

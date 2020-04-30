@@ -1,0 +1,5 @@
+- src: ssh://git@gitlab-master.nvidia.com:12051/nvdc/DevOps/ansible-roles/k8s-validation.git
+  scm: git
+
+- src: ssh://git@gitlab-master.nvidia.com:12051/nvdc/DevOps/ansible-roles/node-validation.git
+  scm: git

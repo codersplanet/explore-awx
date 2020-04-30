@@ -1,0 +1,13 @@
+---
+    - name: Install Pynetbox library
+      gather_facts: false
+      hosts: localhost
+      vars:
+        pynetbox_version: 4.2.5
+      tasks:
+        - pip:
+            name: pynetbox
+            version: "{{ pynetbox_version }}"
+
+    
+  

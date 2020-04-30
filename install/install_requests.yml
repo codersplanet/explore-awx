@@ -1,0 +1,13 @@
+---
+    - name: Install Request Python Package
+      gather_facts: false
+      hosts: localhost
+      vars:
+        requests_version: 2.23.0
+      tasks:
+        - pip:
+            name: requests
+            version: "{{ requests_version }}"
+            
+    
+  

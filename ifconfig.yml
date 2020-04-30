@@ -1,0 +1,14 @@
+---
+    - name: IP
+      gather_facts: false
+      hosts: localhost
+      tasks:
+        - name: Get ip configuration
+          shell: ifconfig
+          register: cmd_output
+
+        - name:
+          debug:
+            msg: "{{ cmd_output }}"
+
+    
